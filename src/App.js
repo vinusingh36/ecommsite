@@ -1,10 +1,13 @@
-
 import './App.css';
+import Navbar from './Components/Navbar';
+import AllRoutes from './Routes/AllRoutes';
+
 
 function App() {
   return (
-    <div className="App">
-      <h2>Ecomm Site</h2>
+    <div>
+      <AllRoutes />
+      <Navbar />
     </div>
   );
 }
