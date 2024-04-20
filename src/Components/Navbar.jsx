@@ -3,7 +3,7 @@ import cartlogo from '../Assets/cartLogo.png'
 import accountlogo from '../Assets/accountLogo.png'
 import wishlistlogo from '../Assets/wishList.png'
 import { Link } from 'react-router-dom'
-import { Button, Input, InputGroup, InputLeftElement } from '@chakra-ui/react'
+import { Input, InputGroup, InputLeftElement } from '@chakra-ui/react'
 import { SearchIcon } from '@chakra-ui/icons'
 
 let routesData = [
@@ -48,7 +48,9 @@ const Navbar = () => {
                     <InputLeftElement pointerEvents='none'>
                         <SearchIcon color='gray.600' />
                     </InputLeftElement>
-                    <Input type='text' placeholder='Search Products' focusBorderColor="none" style={{ borderRadius: "20px", outline: "black", border: "0.13rem solid black", }} />
+                    <Input type='text' placeholder='Search Products' focusBorderColor="none"
+                        className='search_field'
+                        style={{ borderRadius: "20px", outline: "black", border: "0.13rem solid black", }} />
 
                 </InputGroup>
 

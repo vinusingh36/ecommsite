@@ -1,0 +1,120 @@
+.top_container {
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #f9eccc, #eea39e);
+}
+
+
+.main_container {
+    display: flex;
+    justify-content: space-between;
+    height: 225px;
+    padding: 5px;
+}
+
+.social_media_logo {
+    width: 20%;
+    height: 200px;
+    padding: 3.5rem;
+
+}
+
+.social_media_logo div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.online_shoping {
+    width: 11%;
+    height: 200px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.online_shoping p:hover {
+    font-weight: bold;
+    color: red;
+}
+
+.popular_searches {
+    width: 11%;
+    height: 200px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.popular_searches p:hover {
+    font-weight: bold;
+    color: red;
+}
+
+.brand_names {
+    width: 11%;
+    height: 200px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.brand_names p:hover {
+    font-weight: bold;
+    color: red;
+}
+
+.customer_policy {
+    width: 11%;
+    height: 200px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.customer_policy p:hover {
+    font-weight: bold;
+    color: red;
+}
+
+.support_div {
+    width: 11%;
+    height: 200px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.support_div p:hover {
+    font-weight: bold;
+    color: red;
+}
+
+.contact_us-div {
+    width: 20%;
+    height: 200px;
+    padding: 45px 20px 10px 10px;
+}
+
+.contact_us-div p {
+    font-size: .9rem;
+
+}
+
+.contact_us-div p a {
+    text-decoration: underline;
+}
+
+.contact_us-div p a:hover {
+    color: red;
+}
+
+.copyright_container {
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.copyright_container:hover {
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: red;
+}
