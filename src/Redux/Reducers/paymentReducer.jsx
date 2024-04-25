@@ -3,9 +3,9 @@ let initData = {
 
 }
 
-const paymentRedcuer = (state = initData, action) => {
+const paymentReducer = (state = initData, action) => {
 
     return state;
 }
 
-export default paymentRedcuer;
+export default paymentReducer;

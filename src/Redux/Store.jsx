@@ -1,13 +1,13 @@
 import { combineReducers, legacy_createStore as createStore } from 'redux'
-import productsRedcuer from './Reducers/productsReducer';
-import paymentRedcuer from './Reducers/paymentReducer';
-import cartRedcuer from './Reducers/cartReducers';
-import wishlistRedcuer from './Reducers/wishlistReducer';
-import accountsRedcuer from './Reducers/accountsReducers';
+import productsReducer from './Reducers/productsReducer';
+import paymentReducer from './Reducers/paymentReducer';
+import cartReducer from './Reducers/cartReducers';
+import wishlistReducer from './Reducers/wishlistReducer';
+import accountsReducer from './Reducers/accountsReducers';
 
 
 
-let rootReducer = combineReducers({ productsRedcuer, paymentRedcuer, cartRedcuer, wishlistRedcuer, accountsRedcuer })
+let rootReducer = combineReducers({ productsReducer, paymentReducer, cartReducer, wishlistReducer, accountsReducer })
 
 const Store = createStore(rootReducer);
 

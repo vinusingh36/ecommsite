@@ -4,9 +4,9 @@ let initData = {
     wishedProducts: []
 }
 
-const wishlistRedcuer = (state = initData, action) => {
+const wishlistReducer = (state = initData, action) => {
 
     return state;
 }
 
-export default wishlistRedcuer;
+export default wishlistReducer;

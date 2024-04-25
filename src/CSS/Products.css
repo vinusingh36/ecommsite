@@ -1,0 +1,94 @@
+.first_container {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.breadcrumbs_div {
+    /* border: 2px solid black; */
+    height: 50px;
+    width: 80%;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    padding: 25px;
+    height: 1400px;
+}
+
+
+.filter_container {
+    width: 25%;
+    height: 400px;
+    text-align: center;
+}
+
+.products_container {
+    width: 70%;
+    /* border: 2px solid black; */
+    height: 400px;
+    text-align: center;
+}
+
+.sorting_div {
+    /* border: 2px solid black; */
+    height: 25px;
+    width: 40%;
+    float: right;
+}
+
+
+
+
+/* ProductsCard CSS */
+
+.productscard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px 25px 25px 25px;
+    margin-top: 30px;
+    gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.cards_div {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0 0 10px grey;
+}
+
+.cards_div img {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 2.5px grey;
+}
+
+.item_price {
+    text-decoration: line-through;
+}
+
+.sale_price {
+    font-weight: bold;
+}
+
+.discount_price {
+    font-weight: 500;
+    color: green;
+}
+
+.wishlist_addtocart {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination_container {
+    margin-top: 10px;
+}

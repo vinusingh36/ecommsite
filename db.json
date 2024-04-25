@@ -1,0 +1,200 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "INVICTUS Men Maroon Regular Fit",
+            "rating": "4.6",
+            "price": 300,
+            "category": "male",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13406442/2021/5/3/9b70583b-7a12-48a3-adb7-e2a51d8aedd41620043502081INVICTUSMenMaroonRegularFitSolidFormalShirt7.jpg",
+            "discount": ".10",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Roadster Men Arona Slim Fit",
+            "rating": "2.6",
+            "price": 700,
+            "category": "male",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14641382/2021/10/8/0863f060-9510-44a4-8e19-3ae2927593d71633674653806TshirtsRoadsterMenKurtasOdebyHouseofPataudiWomenKurtasOdebyH1.jpg",
+            "discount": ".15",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "INVICTUS Men Classic Slim Fit",
+            "rating": "4.0",
+            "price": 1175,
+            "category": "male",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/24757280/2023/9/13/af26c742-e329-4c00-87e7-6e15ae04a0fa1694605250478-INVICTUS-Men-Shirts-2411694605249962-1.jpg",
+            "discount": ".10",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Mast & Harbour Men Standard Opaque Checked",
+            "rating": "4.7",
+            "price": 1625,
+            "category": "male",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/24749794/2023/9/15/c8e3a8dc-ac5b-4d5a-998b-231d4609defb1694772337169-Mast--Harbour-Men-Shirts-4141694772336729-1.jpg",
+            "discount": ".05",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "SINGNI Women Purple Ethnic",
+            "rating": "4.8",
+            "price": 550,
+            "category": "female",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/20695836/2022/11/10/ba1724c2-c606-481c-a0ca-63424b61a8661668078028270WomensRayonPrintedEmbroideredKurtaWithPantAndDupatta1.jpg",
+            "discount": ".05",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "KALINI Ethnic Motifs Yoke Design",
+            "rating": "4.4",
+            "price": 850,
+            "category": "female",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/25260156/2023/9/29/3d04b8b4-1104-4801-bed4-17ebf98223301695968509595KALINIWomenPinkEthnicMotifsYokeDesignRegularGottaPattiKurtaw1.jpg",
+            "discount": ".05",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "BULLMER Tribal Printed Oversized Cotton T-shirt",
+            "rating": "4.1",
+            "price": 1570,
+            "category": "male",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+            "discount": ".20",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Anayna Ethnic Motifs Printed Kurta",
+            "rating": "3.0",
+            "price": 1400,
+            "category": "female",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/22143838/2023/10/4/fc5eab91-6911-4dff-aac3-bd8771cf03371696411495676-anayna-Ethnic-Motifs-Printed-Kurta-9951696411495609-6.jpg",
+            "discount": ".15",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        },
+        {
+            "id": 9,
+            "title": "KALINI Ethnic Motif Woven Design",
+            "rating": "2.7",
+            "price": 2200,
+            "category": "female",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/22536178/2023/3/28/060630ba-0cb0-46f5-ab19-59a0d7502af41679989291511KALINIMaroonBlueWovenDesignZariPureSilkKanjeevaramSaree1.jpg",
+            "discount": ".15",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        },
+        {
+            "id": 10,
+            "title": "Kryptic Men Printed Polo Collar Pure Cotton T-shirt",
+            "rating": "2.7",
+            "price": 1300,
+            "category": "male",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/20963310/2022/11/29/284f5460-7301-4a15-8053-0ff6fa8d924a1669690173755KrypticMenWhitePrintedPoloCollarTropicalAppliqueT-shirt1.jpg",
+            "discount": ".10",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        }
+    ],
+    "cart": [
+        {
+            "id": "9",
+            "title": "KALINI Ethnic Motif Woven Design",
+            "rating": "2.7",
+            "price": 2200,
+            "category": "female",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/22866694/2023/4/24/b699d978-6a8f-4064-bcaf-f2480db9f4a41682349679691KaliniOrangeSilkBlendEthnicWovenDesignFestiveSareewithMatchi1.jpg",
+            "discount": ".15",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        }
+    ],
+    "wishlist": [
+        {
+            "id": "10",
+            "title": "Peter England Men Black Solid Slim-Fit Single-Breasted Blazer",
+            "rating": "2.7",
+            "price": 1260,
+            "category": "male",
+            "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16698514/2022/1/6/3a85935d-2b4f-4af3-aae1-0565a8dbc9b81641448352255PeterEnglandMenBlackSolidSlim-FitSingle-BreastedBlazer1.jpg",
+            "discount": ".10",
+            "size": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ]
+        }
+    ]
+}

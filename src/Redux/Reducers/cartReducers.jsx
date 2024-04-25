@@ -4,9 +4,9 @@ let initData = {
     cartProducts: []
 }
 
-const cartRedcuer = (state = initData, action) => {
+const cartReducer = (state = initData, action) => {
 
     return state;
 }
 
-export default cartRedcuer;
+export default cartReducer;
