@@ -1,10 +1,11 @@
+import { Box } from "@chakra-ui/react";
 
 
 const Pagenotfound = () => {
     return (
-        <div>
+        <Box minHeight={362}>
             <h2>Page not found on the Server!!! 🎇🎆🎇</h2>
-        </div>
+        </Box>
     )
 }
 

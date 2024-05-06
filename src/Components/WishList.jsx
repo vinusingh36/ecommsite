@@ -1,10 +1,11 @@
+import { Box } from "@chakra-ui/react";
 
 
 const WishList = () => {
     return (
-        <div>
+        <Box minHeight={362}>
             <h2>WishList Page</h2>
-        </div>
+        </Box >
     )
 }
 

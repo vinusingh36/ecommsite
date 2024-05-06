@@ -4,7 +4,6 @@
 }
 
 .breadcrumbs_div {
-    /* border: 2px solid black; */
     height: 50px;
     width: 80%;
     align-items: center;
@@ -14,27 +13,24 @@
 .main-container {
     display: flex;
     justify-content: space-around;
-    /* border: 2px solid black; */
     padding: 25px;
     height: 1400px;
 }
 
 
 .filter_container {
-    width: 25%;
+    width: 20%;
     height: 400px;
     text-align: center;
 }
 
 .products_container {
-    width: 70%;
-    /* border: 2px solid black; */
+    width: 75%;
     height: 400px;
     text-align: center;
 }
 
 .sorting_div {
-    /* border: 2px solid black; */
     height: 25px;
     width: 40%;
     float: right;
@@ -61,12 +57,12 @@
     box-shadow: 0 0 10px grey;
 }
 
-.cards_div img {
+.cards_div_img {
     width: 80%;
     height: 250px;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 0 0 2.5px grey;
+
 }
 
 .item_price {
@@ -83,6 +79,7 @@
 }
 
 .wishlist_addtocart {
+    margin-left: 20px;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;

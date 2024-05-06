@@ -3,9 +3,9 @@ let initData = {
     isLogin: true
 }
 
-const accountsRedcuer = (state = initData, action) => {
+const accountsReducer = (state = initData, action) => {
 
     return state;
 }
 
-export default accountsRedcuer;
+export default accountsReducer;

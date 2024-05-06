@@ -48,11 +48,7 @@ const Products = () => {
         setSortvalue(e.target.value)
     }
 
-    let { isLoading, isError, products } = useSelector((store) => store.productsReducer)
-
-    console.log(categoryValue);
-
-
+    let { isLoading, isError, products } = useSelector((store) => store.productsReducer);
 
     return (
         <div className="first_container">
@@ -102,15 +98,15 @@ const Products = () => {
                         </Select>
 
                     </div>
-                    <Heading size='md'>Products Card</Heading>
+                    <Heading size={"md"}>Products Card</Heading>
                     {
                         isLoading ? <Loading /> : isError ? <Error /> : <ProductsCard products={products} />
                     }
-                    <div className="pagination_container">
+                    <Box className="pagination_container">
                         <Button isDisabled={page === 1 ? true : false} onClick={handlePrevPagination} >Prev</Button>&emsp;
                         <Button>{page}</Button>&emsp;
                         <Button isDisabled={page === 2 ? true : false} onClick={handleNextPagination} >Next</Button>
-                    </div>
+                    </Box>
                 </div>
             </div>
         </div >

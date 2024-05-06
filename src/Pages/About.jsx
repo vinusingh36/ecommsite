@@ -1,7 +1,7 @@
 
 const About = () => {
     return (
-        <div>
+        <div style={{ minHeight: "362px" }}>
             <h2>About Us Page</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quidem est, provident nulla earum ullam nisi vero hic dolorem, iste suscipit autem accusantium nobis dolore, eum velit ratione nemo delectus.
                 Distinctio sit dolor a ut labore ipsum et quas architecto, rerum facere temporibus maxime impedit rem, quod nostrum dolore! Voluptatibus omnis magnam atque. Necessitatibus culpa eum impedit iure similique laborum.

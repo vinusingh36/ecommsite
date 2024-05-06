@@ -2,7 +2,7 @@ import '../CSS/Navbar.css'
 import cartlogo from '../Assets/cartLogo.png'
 import accountlogo from '../Assets/accountLogo.png'
 import wishlistlogo from '../Assets/wishList.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Input, InputGroup, InputLeftElement } from '@chakra-ui/react'
 import { SearchIcon } from '@chakra-ui/icons'
 
@@ -37,9 +37,11 @@ let routeIcons = [
 ]
 
 const Navbar = () => {
+    const Navigate = useNavigate();
+
     return (
         <div className="container" >
-            <div className='logo-div'>
+            <div className='logo-div' onClick={() => Navigate("/")} >
                 <div>John Douglas</div>
                 <div style={{ fontSize: ".6rem" }}> coming fashion for new generation</div>
             </div>

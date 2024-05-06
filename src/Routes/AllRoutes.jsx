@@ -8,6 +8,7 @@ import WishList from "../Components/WishList";
 import Payment from "../Pages/Payment";
 import About from "../Pages/About";
 import Pagenotfound from "../Components/Pagenotfound";
+import ProductsDetails from "../Pages/ProductsDetails";
 
 const AllRoutes = () => {
     return (
@@ -15,7 +16,7 @@ const AllRoutes = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/products/details/:id" element={<>Products Details Page</>} />
+            <Route path="/products/details/:id" element={<ProductsDetails />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/wishlist" element={<WishList />} />
             <Route path="/payment" element={<Protected><Payment /></Protected>} />

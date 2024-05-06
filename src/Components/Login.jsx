@@ -1,10 +1,11 @@
+import { Box } from "@chakra-ui/react";
 
 
 const Login = () => {
     return (
-        <div>
+        <Box minHeight={362}>
             <h2>Login Page</h2>
-        </div>
+        </Box>
     )
 }
 

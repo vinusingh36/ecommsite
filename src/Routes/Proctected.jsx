@@ -5,7 +5,7 @@ import { Navigate } from "react-router-dom";
 
 const Protected = ({ children }) => {
 
-    let { isLogin } = useSelector((store) => store.accountsRedcuer)
+    let { isLogin } = useSelector((store) => store.accountsReducer)
     console.log(isLogin);
     if (isLogin) {
         return children;

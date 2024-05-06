@@ -8,29 +8,30 @@ import shopbycategory from '../Assets/Homepage/shopbycategory.webp'
 import menscard from '../Assets/Homepage/menscard.webp'
 import kidscard from '../Assets/Homepage/kidscard.webp'
 import discountcard from '../Assets/Homepage/discountcard.webp'
+import { Box } from "@chakra-ui/react";
 
 
 const HomePage = () => {
     return (
-        <div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+        <Box>
+            <Box style={{ display: "flex", justifyContent: "center" }}>
                 <Carousel />
-            </div>
-            <div className="img_container">
+            </Box>
+            <Box className="img_container">
                 <img src={img1} loading="lazy" alt="img1" />
                 <img src={img2} loading="lazy" alt="img2" />
                 <img src={img3} loading="lazy" alt="img3" />
                 <img src={img4} loading="lazy" alt="img4" />
-            </div>
-            <div className="shop_category-div">
+            </Box>
+            <Box className="shop_category-div">
                 <img src={shopbycategory} alt="" />
-            </div>
-            <div className="card_mens-kids">
+            </Box>
+            <Box className="card_mens-kids">
                 <img src={menscard} loading="lazy" alt="menscard" />
                 <img src={kidscard} loading="lazy" alt="kidscard" />
                 <img src={discountcard} loading="lazy" alt="discountcard" style={{ borderRadius: "10px" }} />
-            </div>
-        </div>
+            </Box>
+        </Box>
 
     )
 }

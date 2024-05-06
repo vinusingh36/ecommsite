@@ -1,10 +1,11 @@
+import { Box } from "@chakra-ui/react";
 
 
 const Payment = () => {
     return (
-        <div>
+        <Box minHeight={362}>
             <h2>Payment Page</h2>
-        </div>
+        </Box>
     )
 }
 
