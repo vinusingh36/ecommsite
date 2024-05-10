@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Radio, RadioGroup, Select, Stack, Text, useStatStyles } from '@chakra-ui/react';
+import { Box, Button, Heading, Select, Text } from '@chakra-ui/react';
 import '../CSS/ProductDetail.css';
 import { StarIcon } from '@chakra-ui/icons';
 
@@ -26,7 +26,7 @@ const SingleProductDetails = ({ currProduct }) => {
                 <Box className="title_single_page_container" >
                     <Heading size={"md"}>{currProduct.title}</Heading>
 
-                    <Box mb={5} className="rating_single_page_container" >
+                    <Box mb={3} className="rating_single_page_container" >
                         <Heading size={"md"} padding={"0 10px 0 5px"} >{currProduct.rating}</Heading>
                         <StarIcon alignItems={"start"} marginTop={"4px"} marginRight={"5px"} color="grey" />
                         |   <Box marginLeft={"10px"} > {Math.floor(Math.random() * 100)} Rating</Box>

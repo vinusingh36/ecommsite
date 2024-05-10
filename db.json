@@ -171,7 +171,80 @@
       ]
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 1,
+      "title": "INVICTUS Men Maroon Regular Fit",
+      "rating": "4.6",
+      "price": 300,
+      "category": "male",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13406442/2021/5/3/9b70583b-7a12-48a3-adb7-e2a51d8aedd41620043502081INVICTUSMenMaroonRegularFitSolidFormalShirt7.jpg",
+      "discount": ".10",
+      "quantity": 1,
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "selectedSize": "L"
+    },
+    {
+      "id": 3,
+      "title": "INVICTUS Men Classic Slim Fit",
+      "rating": "4.0",
+      "price": 1175,
+      "category": "male",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/24757280/2023/9/13/af26c742-e329-4c00-87e7-6e15ae04a0fa1694605250478-INVICTUS-Men-Shirts-2411694605249962-1.jpg",
+      "discount": ".10",
+      "quantity": 1,
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "selectedSize": "XXL"
+    },
+    {
+      "id": 9,
+      "title": "KALINI Ethnic Motif Woven Design",
+      "rating": "2.7",
+      "price": 2200,
+      "category": "female",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/22536178/2023/3/28/060630ba-0cb0-46f5-ab19-59a0d7502af41679989291511KALINIMaroonBlueWovenDesignZariPureSilkKanjeevaramSaree1.jpg",
+      "discount": ".15",
+      "quantity": 1,
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "selectedSize": "XL"
+    },
+    {
+      "id": 10,
+      "title": "Kryptic Men Printed Polo Collar Pure Cotton T-shirt",
+      "rating": "2.7",
+      "price": 1300,
+      "category": "male",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/20963310/2022/11/29/284f5460-7301-4a15-8053-0ff6fa8d924a1669690173755KrypticMenWhitePrintedPoloCollarTropicalAppliqueT-shirt1.jpg",
+      "discount": ".10",
+      "quantity": 1,
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "selectedSize": "L"
+    }
+  ],
   "wishlist": [
     {
       "id": "10",

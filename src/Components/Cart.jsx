@@ -5,8 +5,9 @@ import { renderCartProductData } from "../Redux/RenderUI";
 import emptycartimg from "../Assets/emptycartimg.png"
 import { AddIcon, DeleteIcon, MinusIcon } from "@chakra-ui/icons";
 import { deletProductFromtheCart, updateProductToTheCart } from "../Redux/api";
-import { decCartProductsSuccessAction, deleteCartProductsSuccessAction, incCartProductsSuccessAction } from "../Redux/actions";
+import { decCartProductsSuccessAction, incCartProductsSuccessAction } from "../Redux/actions";
 import { useNavigate } from "react-router-dom";
+
 
 
 const Cart = () => {
@@ -140,10 +141,10 @@ const Cart = () => {
             }
             <Box p={3} display={"flex"} justifyContent={"space-around"}>
                 <Button mt={1} width={"300px"} border={"2px"} borderColor={"black"} backgroundImage={"linear-gradient(to bottom right, #f9eccc, #eea39e)"} onClick={() => Navigate("/payment")} >
-                    Proceed For Payment
+                    Checkout
                 </Button>
                 <Heading size={"md"} p={3} textAlign={"right"} mr={16} >
-                    TOTAL BILL : ${totalBill}
+                    TOTAL BILL : ₹ {totalBill}
                 </Heading>
             </Box>
 
