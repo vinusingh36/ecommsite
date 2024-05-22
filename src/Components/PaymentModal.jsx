@@ -1,10 +1,21 @@
-import { Box, Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from "@chakra-ui/react"
+import { Box, Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, useDisclosure } from "@chakra-ui/react"
+import Transaction from "./Transaction";
+import { useSelector } from "react-redux";
+
 
 const PaymentModal = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen, onOpen, onClose } = useDisclosure();
+
+
+    const { addressData } = useSelector((store) => store.paymentReducer);
+
+
+
     return (
         <Box>
-            <Button colorScheme="green" onClick={onOpen}>Proceed for Payment</Button>
+            {
+                addressData.length === 0 ? "" : <Button colorScheme="green" onClick={onOpen}>Proceed for Payment</Button>
+            }
             <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay
                     bg='pinkAlpha.300'
@@ -16,14 +27,8 @@ const PaymentModal = () => {
                     <ModalHeader m={"auto"}> Payment Details </ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
-                        Shipping Details will be shown Here
+                        <Transaction onClose={onClose} />
                     </ModalBody>
-                    <ModalFooter m={"auto"} gap={"2rem"}>
-                        <Button colorScheme='green' >Pay</Button>
-                        <Button colorScheme='red' mr={3} onClick={onClose}>
-                            Close
-                        </Button>
-                    </ModalFooter>
                 </ModalContent>
             </Modal>
         </Box>

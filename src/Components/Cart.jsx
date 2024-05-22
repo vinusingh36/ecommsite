@@ -2,7 +2,7 @@ import { Box, Button, Heading, Select, Text, useToast } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { renderCartProductData } from "../Redux/RenderUI";
-import emptycartimg from "../Assets/emptycartimg.png"
+import emptycartimg from "../Assets/emptycartimg.webp"
 import { AddIcon, DeleteIcon, MinusIcon } from "@chakra-ui/icons";
 import { deletProductFromtheCart, updateProductToTheCart } from "../Redux/api";
 import { decCartProductsSuccessAction, incCartProductsSuccessAction } from "../Redux/actions";
@@ -62,12 +62,12 @@ const Cart = () => {
 
     useEffect(() => {
         CalTotal();
-    }, [cartProducts])
-    console.log(totalBill);
+    })
 
     useEffect(() => {
+
         renderCartProductData(dispatch);
-    }, [selectedSize])
+    }, [selectedSize, dispatch])
 
     let decreaseItemQunatity = (id) => {
         dispatch(decCartProductsSuccessAction(id))
@@ -100,17 +100,30 @@ const Cart = () => {
 
     if (cartProducts.length === 0) {
         return (
-            <Box w={"50%"} m={"auto"}>
+            <Box w={"50%"} m={"auto"} textAlign={"center"} >
                 <img src={emptycartimg} alt="emptycartimg" />
+                <Button
+                    mb={"2rem"}
+                    pl={"4rem"}
+                    pr={"4rem"}
+                    colorScheme="none"
+                    border="2px"
+                    borderColor='green'
+                    color={"black"}
+                    backgroundImage="linear-gradient(to bottom right, #f9eccc, #eea39e)"
+                    onClick={() => Navigate("/products")}
+                >
+                    Go To Products
+                </Button>
             </Box>
         )
     }
     return (
-        <Box border={"2px solid black"} minHeight={"362px"}>
+        <Box p={".5rem"} borderRadius={"1.5rem"} boxShadow={"0 0 10px black"} m={".5rem"} border={"2px solid black"} minHeight={"362px"}>
             {
                 cartProducts?.map((cartItems) => {
                     return (
-                        <Box key={cartItems.id} border={"2px solid black"} p={3} display={"flex"} justifyContent={"space-around"}>
+                        <Box key={cartItems.id} borderRadius={"1rem"} boxShadow={"0 0 20px white"} p={3} m={".5rem"} display={"flex"} justifyContent={"space-around"}>
                             <img src={cartItems.image} alt="img" width={"75px"} height={"75px"} style={{ borderRadius: "10%" }} />
                             <Box w={"30%"}>
                                 <Heading size={"sm"}>{cartItems.title}</Heading>

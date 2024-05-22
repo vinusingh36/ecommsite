@@ -1,12 +1,15 @@
 import { Box, Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from "@chakra-ui/react"
 import PaymentModal from "./PaymentModal";
+import { useSelector } from "react-redux";
 
 const ShippingModal = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen, onOpen, onClose } = useDisclosure();
+
+    const { addressData } = useSelector((store) => store.paymentReducer);
     return (
-        <Box mt={"2rem"}>
-            <Button pr={"6rem"} pl={"6rem"} onClick={onOpen}>Proceed</Button>
-            <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
+        <Box  >
+            <Button pr={"6rem"} pl={"6rem"} onClick={onOpen}>PROCEED</Button>
+            <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose} >
                 <ModalOverlay
                     bg='pinkAlpha.300'
                     backdropFilter='auto'
@@ -17,7 +20,17 @@ const ShippingModal = () => {
                     <ModalHeader m={"auto"}> Shipping Info </ModalHeader>
                     <ModalCloseButton />
                     <ModalBody >
-                        Shipping Details will be shown Here
+                        {addressData.length === 0 ? <Box>No Saved Address </Box> : addressData.map((data, i) => {
+                            return (
+                                <Box key={i} >
+                                    <p>{data.firstname} {data.lastname} </p>
+                                    <p>{data.address} </p>
+                                    <p>{data.city}, {data.country} </p>
+                                    <p>{data.pincode} </p>
+                                    <p>{data.phone} </p>
+                                </Box>
+                            )
+                        })}
                     </ModalBody>
                     <ModalFooter m={"auto"} gap={"2rem"}>
                         <PaymentModal />

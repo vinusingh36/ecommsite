@@ -37,9 +37,11 @@ const productsReducer = (state = initData, action) => {
                 isLoading: false,
                 currProduct: action.payload
             }
+        default: {
+            return state;
+        }
     }
 
-    return state;
 }
 
 export default productsReducer;

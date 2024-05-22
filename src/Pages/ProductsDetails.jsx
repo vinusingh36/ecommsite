@@ -16,7 +16,7 @@ const ProductsDetails = () => {
 
     useEffect(() => {
         renderSingleProductData(dispatch, id)
-    }, [])
+    }, [dispatch, id])
 
     let { isLoading, isError, currProduct } = useSelector((store) => store.productsReducer)
 

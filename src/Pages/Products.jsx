@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Radio, RadioGroup, Select, Stack, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, Heading, Radio, RadioGroup, Select, Stack } from "@chakra-ui/react";
 import "../CSS/Products.css"
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -35,7 +35,7 @@ const Products = () => {
 
     useEffect(() => {
         renderProductsData(dispatch, page, sortvalue, categoryValue, filterQuery, ratingQuery)
-    }, [page, sortvalue, categoryValue, filterQuery, ratingQuery])
+    }, [dispatch, page, sortvalue, categoryValue, filterQuery, ratingQuery])
 
     const handlePrevPagination = () => {
         setPage((page) => page - 1)
@@ -100,7 +100,19 @@ const Products = () => {
                     </div>
                     <Heading size={"md"}>Products Card</Heading>
                     {
-                        isLoading ? <Loading /> : isError ? <Error /> : <ProductsCard products={products} />
+                        isLoading ? <Loading /> : isError ? <Error /> :
+                            <Box
+                                display={"grid"}
+                                gridTemplateColumns={"1fr 1fr 1fr"}
+                                p={"5px 25px 25px 25px"}
+                                mt={"30px"}
+                                gap={"1.8rem"}
+                                gridColumnGap={"2rem"}
+
+                            >
+                                {products?.map((products) => <ProductsCard products={products} />)}
+                            </Box>
+
                     }
                     <Box className="pagination_container">
                         <Button isDisabled={page === 1 ? true : false} onClick={handlePrevPagination} >Prev</Button>&emsp;

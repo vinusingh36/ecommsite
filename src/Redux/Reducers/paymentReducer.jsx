@@ -1,11 +1,19 @@
-let initData = {
-    userData: []
+import { SET_USER_ADDRESS } from "../actionTypes";
 
+let initData = {
+    addressData: [],
+    cardData: []
 }
 
 const paymentReducer = (state = initData, action) => {
 
-    return state;
+    switch (action.type) {
+        case SET_USER_ADDRESS: return { ...state, addressData: [action.payload] }
+        default: {
+            return state;
+        }
+    }
+
 }
 
 export default paymentReducer;

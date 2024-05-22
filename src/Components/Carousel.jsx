@@ -58,7 +58,7 @@ const Carousel = () => {
             clearInterval(intervalId.current)
         }
 
-    }, [slide])
+    })
 
 
     return (

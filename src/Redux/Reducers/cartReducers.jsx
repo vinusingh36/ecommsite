@@ -1,4 +1,4 @@
-import { DEC_CART_PRODUCTS_SUCCESS, DELETE_CART_PRODUCTS_SUCCESS, GET_CART_PRODUCTS_ERROR, GET_CART_PRODUCTS_LOADING, GET_CART_PRODUCTS_SUCCESS, INC_CART_PRODUCTS_SUCCESS } from "../actionTypes"
+import { DEC_CART_PRODUCTS_SUCCESS, GET_CART_PRODUCTS_ERROR, GET_CART_PRODUCTS_LOADING, GET_CART_PRODUCTS_SUCCESS, INC_CART_PRODUCTS_SUCCESS } from "../actionTypes"
 
 let initData = {
     isLoading: false,
@@ -53,10 +53,11 @@ const cartReducer = (state = initData, action) => {
                     return product;
                 }),
             };
-
+        default: {
+            return state;
+        }
     }
 
-    return state;
 }
 
 export default cartReducer;
