@@ -1,9 +1,13 @@
 import { Box, Button, useToast } from "@chakra-ui/react";
 import cartlogo from "../Assets/cartLogo.png"
 import { addProductToTheCart } from "../Redux/api";
+import { useDispatch } from "react-redux";
+import { renderCartProductData } from "../Redux/RenderUI";
 
 const AddToCartButton = ({ cartItems, selectedSize }) => {
+    // const { cartProducts } = useSelector((store) => store.cartReducer);
     const toast = useToast();
+    const dispatch = useDispatch();
     let handleAddToCart = () => {
         if (selectedSize === "") {
             toast({
@@ -17,6 +21,7 @@ const AddToCartButton = ({ cartItems, selectedSize }) => {
         else {
             addProductToTheCart(cartItems, selectedSize)
                 .then(() => {
+                    renderCartProductData(dispatch);
                     toast({
                         title: 'Product Added To the Cart',
                         description: "",

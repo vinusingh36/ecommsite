@@ -1,6 +1,10 @@
 .main_single_page_container {
     border: 2px solid black;
+    box-shadow: 0 0 10px black;
     height: auto;
+    margin: .6rem;
+    border-radius: 1.5rem;
+    padding: .2rem;
 }
 
 .breadcrumb_container {
@@ -14,24 +18,26 @@
 }
 
 .img_single_page_container {
-    border: 2px solid black;
     width: 40%;
+    box-shadow: 0 0 10px white;
+    border-radius: 1rem;
 }
 
 .img_single_page_container img {
-    border: 2px solid black;
     margin: auto;
+    padding: 1rem;
+    border-radius: 2rem;
 }
 
 .title_single_page_container {
-    border: 2px solid black;
+    box-shadow: 0 0 10px white;
+    border-radius: 1rem;
     width: 55%;
     padding: 10px;
 }
 
 .details_single_page_container {
     height: auto;
-    border: 2px solid green;
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
@@ -43,12 +49,14 @@
     width: 45%;
     display: flex;
     justify-content: space-between;
+    border-radius: 2rem;
 }
 
 .payment_details_single_page_container {
     padding: 1rem;
     border: 2px solid black;
     width: 50%;
+    border-radius: 2rem;
 }
 
 .payment_option_single_page {

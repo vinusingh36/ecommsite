@@ -12,10 +12,10 @@ const Footer = () => {
                 <Box className="social_media_logo" >
                     <Heading size='md'>KEEP IN TOUCH</Heading>
                     <Box>
-                        <img src={youtube} alt="##" width={50} height={50} />
-                        <img src={facebook} alt="##" width={50} height={50} />
-                        <img src={instagram} alt="##" width={50} height={50} />
-                        <img src={twitter} alt="##" width={50} height={50} />
+                        <img src={facebook} alt="##" width={50} />
+                        <img src={instagram} alt="##" width={50} />
+                        <img src={youtube} alt="##" width={50} />
+                        <img src={twitter} alt="##" width={50} />
                     </Box>
                 </Box>
                 <Box className="online_shoping">

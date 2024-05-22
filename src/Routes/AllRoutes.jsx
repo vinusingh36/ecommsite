@@ -9,6 +9,7 @@ import Payment from "../Pages/Payment";
 import About from "../Pages/About";
 import Pagenotfound from "../Components/Pagenotfound";
 import ProductsDetails from "../Pages/ProductsDetails";
+import OrderConfirmation from "../Components/OrderConfirmation";
 
 const AllRoutes = () => {
     return (
@@ -20,6 +21,7 @@ const AllRoutes = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/wishlist" element={<WishList />} />
             <Route path="/payment" element={<Protected><Payment /></Protected>} />
+            <Route path="/orderconfirmation" element={<OrderConfirmation />} />
             <Route path="/aboutus" element={<About />} />
             <Route path="*" element={<Pagenotfound />} />
         </Routes>

@@ -1,5 +1,6 @@
 
 import axios from "axios"
+import { addWishlistDataSuccess, getwWishListDataError, getwWishListDataLoading, getwWishListDataSuccess, removeWishlistDataSuccess } from "./actions"
 //API call for getting all the products with sort and Filter Query
 
 export const getProductsData = async (page, sortvalue, categoryValue, filterQuery, ratingQuery) => {
@@ -58,8 +59,6 @@ export const updateProductToTheCart = (cartItems, selectedSize) => {
     });
 }
 
-//
-
 
 
 
@@ -72,4 +71,45 @@ export const getProductsFromtheCart = () => {
 export const deletProductFromtheCart = (id) => {
     let url = `http://localhost:8080/cart`
     return axios.delete(url + `/${id}`)
+}
+
+
+export const getWishlistData = () => (dispatch) => {
+    let url = `http://localhost:8080/wishlist`
+    dispatch(getwWishListDataLoading());
+    axios.get(url)
+        .then((resData) => {
+            dispatch(getwWishListDataSuccess(resData.data))
+        })
+        .catch(() => {
+            dispatch(getwWishListDataError)
+        })
+}
+
+export const addToWishList = (item) => (dispatch) => {
+
+    let url = `http://localhost:8080/wishlist`;
+    dispatch(getwWishListDataLoading());
+    axios
+        .post(url, item)
+        .then((res) => {
+            dispatch(addWishlistDataSuccess(res.data))
+        })
+        .catch(() => {
+            dispatch(getwWishListDataError)
+        })
+}
+
+export const removeFromWishlist = (id) => (dispatch) => {
+
+    let url = `http://localhost:8080/wishlist`;
+    dispatch(getwWishListDataLoading());
+    axios
+        .delete(url + `/${id}`)
+        .then((res) => {
+            dispatch(removeWishlistDataSuccess(id))
+        })
+        .catch(() => {
+            dispatch(getwWishListDataError)
+        })
 }
