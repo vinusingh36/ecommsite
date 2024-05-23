@@ -22,7 +22,7 @@ const Transaction = ({ onClose }) => {
     }
 
     const handleOrderConfirmation = () => {
-        if (cardData.cardnumber === "1234" && cardData.cvv === "123") {
+        if (cardData.cardnumber === "1234 1234 1234 1234" && cardData.cvv === "123") {
             toast({
                 title: 'Please Wait!',
                 description: "Your Order is being Processed.............",
