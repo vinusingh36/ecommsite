@@ -50,6 +50,7 @@ const Products = () => {
 
     let { isLoading, isError, products } = useSelector((store) => store.productsReducer);
 
+
     return (
         <div className="first_container">
             <div className="breadcrumbs_div">
@@ -117,7 +118,7 @@ const Products = () => {
                     <Box className="pagination_container">
                         <Button isDisabled={page === 1 ? true : false} onClick={handlePrevPagination} >Prev</Button>&emsp;
                         <Button>{page}</Button>&emsp;
-                        <Button isDisabled={page === 2 ? true : false} onClick={handleNextPagination} >Next</Button>
+                        <Button isDisabled={page === 4 ? true : false} onClick={handleNextPagination} >Next</Button>
                     </Box>
                 </div>
             </div>
