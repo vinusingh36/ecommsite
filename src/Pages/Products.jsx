@@ -24,12 +24,10 @@ const Products = () => {
     if (filtervalue !== "") {
         const [minPrice, maxPrice] = filtervalue.split(" - ");
         filterQuery = `price_gte=${minPrice}&price_lte=${maxPrice}`
-        console.log(filterQuery);
     }
     if (ratingvalue !== "") {
         const [minRating, maxRating] = ratingvalue.split(" - ");
         ratingQuery = `rating_gte=${minRating}&rating_lte=${maxRating}`
-        console.log(ratingQuery);
     }
 
 

@@ -18,8 +18,7 @@ const Cart = () => {
     const Navigate = useNavigate();
 
 
-    const { isLoading, isError, cartProducts } = useSelector((store) => store.cartReducer)
-    console.log(isLoading, isError, cartProducts);
+    const { isLoading, isError, cartProducts } = useSelector((store) => store.cartReducer);
 
     const handleSizeChange = (e, cartItems) => {
         if (e.target.value === cartItems.selectedSize) {
