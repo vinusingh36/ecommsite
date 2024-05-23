@@ -38,7 +38,9 @@ const Cartsummary = () => {
                     )
                 })
             }
-            <Box bg={"white"} ml={"10rem"} mr={"10rem"} borderRadius={"2rem"} boxShadow={"0 0 5px black"} mt={"1rem"}>
+            <Box bg={"white"} ml={"10rem"} mr={"10rem"} borderRadius={"2rem"} boxShadow={"0 0 5px black"} mt={"1rem"}
+                backgroundImage={"linear-gradient(to bottom right, #f9eccc, #eea39e)"}
+            >
                 <Heading size={"md"} m={"auto"} p={"1rem"} >
                     TOTAL BILL : ₹ {totalBill}
                 </Heading>
