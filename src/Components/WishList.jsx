@@ -14,8 +14,7 @@ const WishList = () => {
     const Navigate = useNavigate();
 
 
-    const { isLoading, isError, wishedProducts } = useSelector((store) => store.wishlistReducer)
-    console.log(isLoading, isError, wishedProducts);
+    const { isLoading, isError, wishedProducts } = useSelector((store) => store.wishlistReducer);
 
     useEffect(() => {
         dispatch(getWishlistData());
